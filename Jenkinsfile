@@ -6,5 +6,10 @@ pipeline {
         echo 'Hello from blueocean'
       }
     }
+    stage('build') {
+      steps {
+        sh 'mkdir test'
+      }
+    }
   }
 }
